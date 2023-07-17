@@ -192,10 +192,36 @@ nav{
 .facts img{
     padding: 10px;
 }
-
-
-
-
+/* styling sponsors section */
+.sponsors-heading{
+    width:40%;
+    margin: 0 auto;
+    text-align: center;
+    margin: 0 auto;
+}
+.sponsors-name{
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+    margin: 80px;
+}
+.sponsors-name img{
+    width:130px;
+    height:40px;
+}
+/* styling footer section */
+footer{
+    border-radius: 8px;
+    background: #fff4e7a9;
+    width: 80%;
+    height: 20px;
+    padding: 20px 0px;
+    margin: 30px auto;
+    text-align: center;
+    color: #424242ae;
+    font-size: 13px;
+    font-weight: 600;
+}
 
 
 
@@ -285,13 +311,21 @@ nav{
     }
     .facts-heading{
         margin:0px 10px 50px;
-        width:100% ;
+        width:90% ;
     }
     .facts-container{
         width: 100%;
         flex-direction:column;
         align-items: center;
         gap:40px;
+        margin: 0 auto;
+    }
+    .sponsors-name{
+        height: 100vh;
+        flex-direction: column;
+        justify-content:space-around;
+    }
+    .sponsors-heading{
         margin: 0 auto;
     }
 }
@@ -358,4 +392,18 @@ nav{
     .experience-box{
         transform: translate(10%,-50%);
     } 
+    .sponsors-name{
+        align-items: center;
+        margin: 80px;
+        height: 40px;
+        gap:30px;
+    }
+    .sponsors-name img{
+        width:80px;
+        height:30px;
+        margin: 0 auto;
+    }
+    .amazon{
+        align-self:end;
+    }
 }
