@@ -1,0 +1,361 @@
+*{
+    margin:0;
+    padding:0;
+    max-width: 100%;
+    font-family: 'Work Sans', sans-serif;
+}
+/* shared styles */
+.primary-button{
+    width: 180px;
+    height: 64px;
+    border: none;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    background: #FF900E;
+}
+.info{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 20px auto;
+}
+section{
+    margin-top: 150px;
+}
+/* main styles */
+main{
+    max-width: 100vw;
+    margin: 160px auto;
+}
+/* header styles */
+header{
+    height:auto;
+    width:100vw;
+    background-color:rgba(255, 144, 14, 0.10);
+    display:flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+nav{
+    width:100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+}
+.nav-link ul{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-link ul li{
+    list-style-type: none;
+    margin-right:60px ;
+}
+.nav-link ul li a{
+    text-decoration: none;
+    color:#424242;
+    font-size: 18px;
+    font-weight: 500;
+}
+.header-content{
+    width: 50%;
+    text-align: center;
+    margin-top:80px ;
+}
+.header-title{
+    color:#131313;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700; 
+}
+.banner-img {
+    width:70%;
+    height:70vh;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+/* feature section style */
+.feature-section{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    align-items: center;
+}
+.four-pic{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+    width: 40%;
+}
+.feature-content{
+    width:40%;
+}
+.feature-title{
+    color: #727272;
+    font-size: 45px;
+    font-weight: 500;
+}
+.title-design1{
+    color: #131313;
+    font-weight: 700;
+}
+.title-design2{
+    color: #FF900E;
+    font-weight: 700;
+}
+
+/* item styling */
+.item{
+    display: flex;
+    justify-content: space-around;
+    gap:50px;
+}
+.item>div{
+    width:30%;
+}
+.items-container h3{
+    color:#131313;
+    font-size: 45px;
+    font-weight: 700;
+    border-left:5px solid #FF900E;
+    padding-left: 15px;
+}
+.item-name{
+    width: 586px;
+    height: 171px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    padding: 30px 20px 0;
+}
+.item-img img{
+    margin-top: 20px;
+    width:100%;
+    height:90vh;
+    border-radius:8px;
+}
+.experience-box{
+    width: 170px;
+    height: 90px;
+    background: #FF900E;
+    transform: translate(-40%,-70%);
+}
+.experience-box span{
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 700;
+}
+.experience-box{
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* facts section styling */
+.facts-section{
+    width: 100%;
+}
+.facts-heading{
+    margin-left: 150px;
+    margin-bottom: 100px;
+    width:40% ;
+}
+.facts-heading h3{
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+.facts-container{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+.facts{
+    text-align: center;
+    width: 200px;
+    height: 180px;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding-top: 20px;
+}
+.facts img{
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive media quiries */
+/* for mobile */
+@media screen and (max-width:576px) {
+    nav{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0 0;
+    }
+    .header-content{
+        width: fit-content;
+        padding: 0 20px;
+    }
+    .header-title{
+        font-size: 54px; 
+    }
+    .nav-link ul li{
+        margin:50px 5px 0px;
+
+    }
+    .banner-img {
+        width:80%;
+        height:40vh;
+    }
+    .feature-section{
+        width: fit-content;
+        display: flex;
+        flex-direction:column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+        padding: 0 20px;
+    }
+    .four-pic{
+        display: grid;
+        grid-template-columns: repeat(1,250px);
+        grid-template-rows: repeat(4,250px);
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+    .feature-content{
+        width: 100%;
+    }
+    .item{
+        flex-direction:column;  
+           
+    }
+    .item>div{
+        width:fit-content;
+        padding: 20px;
+         
+    }
+    .item-name{
+        width: fit-content;
+        padding: 30px 20px;
+        height: auto; 
+    }
+    .experience-box{
+        transform: translate(10%,-50%);
+    } 
+    .item-img{
+        margin: 0 auto;
+    }
+    .facts-heading{
+        margin:0px 10px 50px;
+        width:100% ;
+    }
+    .facts-container{
+        width: 100%;
+        flex-direction:column;
+        align-items: center;
+        gap:40px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+/* for tablet */
+@media screen and (min-width:576px) and (max-width:992px) {
+    
+    nav{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0 0;
+    }
+    .nav-link ul li{
+        margin:40px 10px 0px;
+    }
+    .banner-img {
+        width:80%;
+        height:40vh;
+    }
+    .four-pic{
+        width: 100%;
+    }
+    .feature-section{
+        width: fit-content;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+        padding: 0 40px;
+    }
+    .feature-content{
+        width: 100%;
+    }
+    .feature-content{
+        width: 100%;
+    }
+    .item{
+        flex-direction:column;
+        width:90%;    
+        margin:0 auto;  
+    }
+    .item>div{
+        width:fit-content;     
+    }
+    .item-img{
+        margin: 0 auto;
+    }
+    .facts-heading{
+        margin:0px 10px 50px;
+        width:fit-content ;
+    }
+    .facts-container{
+        width: 90vw;
+        gap:40px;
+        margin: 0 auto;
+    }
+    .experience-box{
+        transform: translate(10%,-50%);
+    } 
+}
