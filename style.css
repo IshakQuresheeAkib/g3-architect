@@ -140,25 +140,24 @@ nav{
     height:90vh;
     border-radius:8px;
 }
-.experience-box{
-    width: 170px;
-    height: 90px;
-    background: #FF900E;
-    transform: translate(-40%,-70%);
-}
 .experience-box span{
+    margin: 0;
     color: #FFF;
     font-size: 40px;
     font-weight: 700;
 }
 .experience-box{
+    width: 170px;
+    height: 90px;
+    background: #FF900E;
+    transform: translate(-40%,-70%);
     color: #FFF;
     font-size: 15px;
     font-weight: 400;
     line-height: 1.5;
     text-align: center;
     border-radius: 5px;
-    padding: 10px;
+    padding: 10px;  
 }
 
 /* facts section styling */
@@ -304,7 +303,7 @@ footer{
         height: auto; 
     }
     .experience-box{
-        transform: translate(10%,-50%);
+        transform: translate(25%,-50%);
     } 
     .item-img{
         margin: 0 auto;
@@ -390,7 +389,7 @@ footer{
         margin: 0 auto;
     }
     .experience-box{
-        transform: translate(10%,-50%);
+        transform: translate(25%,-50%);
     } 
     .sponsors-name{
         align-items: center;
@@ -405,5 +404,9 @@ footer{
     }
     .amazon{
         align-self:end;
+    }
+    .sponsors-heading{
+        width: 70%;
+        margin: 0 auto;
     }
 }
